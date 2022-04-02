@@ -1,7 +1,7 @@
 [msbuild]
 project = "Lunet.Extensions.Logging.SpectreConsole.sln"
 [github]
-user = "lunet"
+user = "lunet-io"
 repo = "Lunet.Extensions.Logging.SpectreConsole"
 [changelog]
 owners = "xoofx" # Exclude xoofx from changelog mentions
