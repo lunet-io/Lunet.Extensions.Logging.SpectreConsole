@@ -5,7 +5,7 @@ A highly configurable [Spectre.Console](https://github.com/spectreconsole/spectr
 
 ## Features
 - Highly configurable
-- Simple dependency to `Microsoft.Extensions.Logging` and `Spectre.Console`
+- Simple dependency to `Microsoft.Extensions.Logging`/`6.0.0+` and `Spectre.Console`/`0.44+`
 - Add log markup methods (e.g `LogInformationMarkup`, `LogWarningMarkup`...) that can take additional `Spectre.Console` renderable objects.
   - Compatible with other loggers. Ansi colors will be removed from output.
 - Compatible with `netstandard2.0+`
