@@ -232,9 +232,9 @@ info: hello Test4
                 var logger = factory.CreateLogger("hello");
                 logger.LogInformation(1, "Test1");
                 logger.LogError(2, "Test2");
-            }, @"info: hello[1] 
+            }, @"info: hello[1]
       Test1
-fail: hello[2] 
+fail: hello[2]
       Test2
 ");
         }
@@ -252,9 +252,9 @@ fail: hello[2]
                 var logger = factory.CreateLogger("hello");
                 logger.LogInformation(1, "Test1");
                 logger.LogError(2, "Test2");
-            }, @"info: hello[(0001)] 
+            }, @"info: hello[(0001)]
       Test1
-fail: hello[(0002)] 
+fail: hello[(0002)]
       Test2
 ");
         }
@@ -275,9 +275,9 @@ fail: hello[(0002)]
                 var logger = factory.CreateLogger("hello");
                 logger.LogInformation(1, "Test1");
                 logger.LogError(2, "Test2");
-            }, @"info: [1] 
+            }, @"info: [1]
       Test1
-fail: [2] 
+fail: [2]
       Test2
 ");
         }
@@ -299,10 +299,10 @@ fail: [2]
                 var logger = factory.CreateLogger("hello");
                 logger.LogInformation(1, "Test1");
                 logger.LogError(2, "Test2");
-            }, @"info: 
-      Test1
-fail: 
-      Test2
+            }, @"info:
+    Test1
+fail:
+    Test2
 ");
         }
 
@@ -354,9 +354,9 @@ Test2
                 var logger = factory.CreateLogger("hello");
                 logger.LogInformation(1, "Test1");
                 logger.LogInformation(2, "Test2");
-            }, @"2022/03/22 07:55:00.125 info: hello[1] 
+            }, @"2022/03/22 07:55:00.125 info: hello[1]
                               Test1
-2022/03/22 08:55:00.125 info: hello[2] 
+2022/03/22 08:55:00.125 info: hello[2]
                               Test2
 ");
         }
@@ -378,7 +378,7 @@ Test2
                 var bar = new Rule("yes");
 
                 logger.LogInformationMarkup(1, "Test1", bar);
-            }, @"info: hello[1] 
+            }, @"info: hello[1]
       Test1
       ───────────────────────────────────── yes ──────────────────────────────────────
 ");
@@ -405,7 +405,7 @@ Test2
                 table.AddRow("3", "4");
 
                 logger.LogInformationMarkup(1, "Test1", table);
-            }, @"info: hello[1] 
+            }, @"info: hello[1]
       Test1
       ┌───────┬────────┐
       │ First │ Second │
@@ -435,7 +435,7 @@ Test2
                 var logger = factory.CreateLogger("hello");
                 logger.LogInformation(1, "Test1");
                 logger.LogError(2, "Test2");
-            }, "\u001b[38;5;2;48;5;0minfo\u001b[0m: hello\u001b[38;5;8;48;5;0m[1]\u001b[0m \n      Test1\n\u001b[38;5;0;48;5;1mfail\u001b[0m: hello\u001b[38;5;8;48;5;0m[2]\u001b[0m \n      Test2\n");
+            }, "\u001b[38;5;2;48;5;0minfo\u001b[0m: hello\u001b[38;5;8;48;5;0m[1]\u001b[0m\n      Test1\n\u001b[38;5;0;48;5;1mfail\u001b[0m: hello\u001b[38;5;8;48;5;0m[2]\u001b[0m\n      Test2\n");
         }
 
         [Test]
@@ -483,60 +483,60 @@ Test2
                 logger.LogCriticalMarkup(2, "Test2");
                 logger.LogCriticalMarkup(new Exception(), "Test3");
                 logger.LogCriticalMarkup("Test4");
-            }, @"trce: hello[1] 
+            }, @"trce: hello[1]
       Test1
       System.Exception: Exception of type 'System.Exception' was thrown.
-trce: hello[2] 
+trce: hello[2]
       Test2
 trce: hello
       Test3
       System.Exception: Exception of type 'System.Exception' was thrown.
 trce: hello
       Test4
-dbug: hello[1] 
+dbug: hello[1]
       Test1
       System.Exception: Exception of type 'System.Exception' was thrown.
-dbug: hello[2] 
+dbug: hello[2]
       Test2
 dbug: hello
       Test3
       System.Exception: Exception of type 'System.Exception' was thrown.
 dbug: hello
       Test4
-warn: hello[1] 
+warn: hello[1]
       Test1
       System.Exception: Exception of type 'System.Exception' was thrown.
-warn: hello[2] 
+warn: hello[2]
       Test2
 warn: hello
       Test3
       System.Exception: Exception of type 'System.Exception' was thrown.
 warn: hello
       Test4
-info: hello[1] 
+info: hello[1]
       Test1
       System.Exception: Exception of type 'System.Exception' was thrown.
-info: hello[2] 
+info: hello[2]
       Test2
 info: hello
       Test3
       System.Exception: Exception of type 'System.Exception' was thrown.
 info: hello
       Test4
-fail: hello[1] 
+fail: hello[1]
       Test1
       System.Exception: Exception of type 'System.Exception' was thrown.
-fail: hello[2] 
+fail: hello[2]
       Test2
 fail: hello
       Test3
       System.Exception: Exception of type 'System.Exception' was thrown.
 fail: hello
       Test4
-crit: hello[1] 
+crit: hello[1]
       Test1
       System.Exception: Exception of type 'System.Exception' was thrown.
-crit: hello[2] 
+crit: hello[2]
       Test2
 crit: hello
       Test3
