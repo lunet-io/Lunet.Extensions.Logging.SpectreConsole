@@ -1,4 +1,5 @@
-# Lunet.Extensions.Logging.SpectreConsole [![Build Status](https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/workflows/ci/badge.svg?branch=main)](https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/actions) [![Coverage Status](https://coveralls.io/repos/github/lunet-io/Lunet.Extensions.Logging.SpectreConsole/badge.svg?branch=main)](https://coveralls.io/github/lunet-io/Lunet.Extensions.Logging.SpectreConsole?branch=main) [![NuGet](https://img.shields.io/nuget/v/Lunet.Extensions.Logging.SpectreConsole.svg)](https://www.nuget.org/packages/Lunet.Extensions.Logging.SpectreConsole/)
+# Lunet.Extensions.Logging.SpectreConsole
+[![Build Status](https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/workflows/ci/badge.svg?branch=main)](https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/actions) [![Coverage Status](https://coveralls.io/repos/github/lunet-io/Lunet.Extensions.Logging.SpectreConsole/badge.svg?branch=main)](https://coveralls.io/github/lunet-io/Lunet.Extensions.Logging.SpectreConsole?branch=main) [![NuGet](https://img.shields.io/nuget/v/Lunet.Extensions.Logging.SpectreConsole.svg)](https://www.nuget.org/packages/Lunet.Extensions.Logging.SpectreConsole/)
 
 A highly configurable [Spectre.Console](https://github.com/spectreconsole/spectre.console/) logger for `Microsoft.Extensions.Logging`.
 
