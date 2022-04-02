@@ -1,0 +1,9 @@
+[msbuild]
+project = "Lunet.Extensions.Logging.SpectreConsole.sln"
+[github]
+user = "lunet"
+repo = "Lunet.Extensions.Logging.SpectreConsole"
+[changelog]
+owners = "xoofx" # Exclude xoofx from changelog mentions
+[coverage]
+exclude = ["[*]Wcwidth.*"]
