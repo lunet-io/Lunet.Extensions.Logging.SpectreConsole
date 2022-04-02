@@ -31,7 +31,7 @@ using (var factory = LoggerFactory.Create(configure => configure.AddSpectreConso
 
 It will generate the following log:
 
-![Example 1](img/example1.png)
+![Example 1](https://raw.githubusercontent.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/main/img/example1.png)
 
 ### Example 2
 
@@ -58,7 +58,7 @@ using (var factory = LoggerFactory.Create(configure =>
 
 It will generate the following log:
 
-![Example 2](img/example2.png)
+![Example 2](https://raw.githubusercontent.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/main/img/example2.png)
 
 ### Example 3
 
@@ -93,7 +93,7 @@ using (var factory = LoggerFactory.Create(configure =>
 
 It will generate the following log:
 
-![Example 3](img/example3.png)
+![Example 3](https://raw.githubusercontent.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/main/img/example3.png)
 
 
 ### Configuration
