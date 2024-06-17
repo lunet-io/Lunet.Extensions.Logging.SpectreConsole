@@ -125,6 +125,7 @@ You can configure the way a log line will be displayed via `SpectreConsoleLogger
 | `EventIdFormatter`                | `delegate`             | The formatter for the log event id.
 | `CategoryFormatter`               | `delegate`             | The formatter for the log category.
 
+In addition, log [filtering rules](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging?tabs=command-line#how-filtering-rules-are-applied) can be added to appsettings.json using the category "SpectreConsole"
 ## License
 
 This software is released under the [BSD-Clause 2 license](https://opensource.org/licenses/BSD-2-Clause). 
