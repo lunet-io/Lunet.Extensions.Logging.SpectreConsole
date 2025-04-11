@@ -11,6 +11,7 @@ namespace Lunet.Extensions.Logging.SpectreConsole;
 /// <summary>
 /// An <see cref="ILoggerProvider"/> for Spectre.Console.
 /// </summary>
+[ProviderAlias("SpectreConsole")]
 public class SpectreConsoleLoggerProvider : ILoggerProvider
 {
     private readonly SpectreConsoleLoggerOptions _config;
