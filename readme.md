@@ -1,11 +1,11 @@
 # Lunet.Extensions.Logging.SpectreConsole
-[![Build Status](https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/workflows/ci/badge.svg?branch=main)](https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/actions) [![Coverage Status](https://coveralls.io/repos/github/lunet-io/Lunet.Extensions.Logging.SpectreConsole/badge.svg?branch=main)](https://coveralls.io/github/lunet-io/Lunet.Extensions.Logging.SpectreConsole?branch=main) [![NuGet](https://img.shields.io/nuget/v/Lunet.Extensions.Logging.SpectreConsole.svg)](https://www.nuget.org/packages/Lunet.Extensions.Logging.SpectreConsole/)
+[![ci](https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/actions/workflows/ci.yml/badge.svg)](https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole/actions/workflows/ci.yml) [![Coverage Status](https://coveralls.io/repos/github/lunet-io/Lunet.Extensions.Logging.SpectreConsole/badge.svg?branch=main)](https://coveralls.io/github/lunet-io/Lunet.Extensions.Logging.SpectreConsole?branch=main) [![NuGet](https://img.shields.io/nuget/v/Lunet.Extensions.Logging.SpectreConsole.svg)](https://www.nuget.org/packages/Lunet.Extensions.Logging.SpectreConsole/)
 
 A highly configurable [Spectre.Console](https://github.com/spectreconsole/spectre.console/) logger for `Microsoft.Extensions.Logging`.
 
 ## Features
 - Highly configurable
-- Simple dependency to `Microsoft.Extensions.Logging`/`7.0.0+` and `Spectre.Console`/`0.47+`
+- Simple dependency to `Microsoft.Extensions.Logging`/`9.0.4+` and `Spectre.Console`/`0.50+`
 - Add log markup methods (e.g `LogInformationMarkup`, `LogWarningMarkup`...) that can take additional `Spectre.Console` renderable objects.
   - Compatible with other loggers. Ansi colors will be removed from output.
 - Compatible with `netstandard2.0+`
